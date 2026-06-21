@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Luck Bakery | Valsad | Since 1985</title>
+    <meta name="description" content="Good Luck Bakery - Authentic Bakery in Valsad since 1985. Fresh Khari, Nan Khatai, Butter Biscuits & Cakes.">
+    <!-- Tailwind CSS & FontAwesome -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'bakery-brown': '#5D2E16',
+                        'bakery-gold': '#D4AF37',
+                        'bakery-cream': '#FDF5E6',
+                        'bakery-dark': '#3E2723',
+                        'bakery-accent': '#8B4513'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-bakery-cream text-bakery-dark">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-bakery-brown text-white text-center py-2 text-xs md:text-sm font-medium tracking-wide">
+        <i class="fas fa-certificate text-bakery-gold mr-1"></i> FSSAI Certified License No. 20726025000953
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 bg-white/95 backdrop-blur shadow-md z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-bakery-brown text-bakery-gold rounded-full flex items-center justify-center font-serif font-bold text-2xl shadow-md border border-bakery-gold">G</div>
+                <div>
+                    <h1 class="font-serif text-xl md:text-2xl font-bold tracking-tight text-bakery-brown">Good Luck Bakery</h1>
+                    <p class="text-xs text-gray-500 font-medium">Since 1985 • Mograwadi, Valsad</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6 font-medium text-sm">
+                <a href="#menu" class="hover:text-bakery-accent transition">Our Menu</a>
+                <a href="#about" class="hover:text-bakery-accent transition">Our Story</a>
+                <a href="#contact" class="hover:text-bakery-accent transition">Contact Us</a>
+            </nav>
+            <a href="https://wa.me/919574526430" target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-700 transition flex items-center gap-2 shadow">
+                <i class="fab fa-whatsapp text-base"></i> Order Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero / Intro -->
+    <section class="max-w-6xl mx-auto px-4 py-12 text-center">
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-bakery-gold/20 max-w-3xl mx-auto relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-bakery-brown via-bakery-gold to-bakery-brown"></div>
+            <span class="text-bakery-gold text-sm font-bold uppercase tracking-widest block mb-2">Welcome To Traditional Taste</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-bold text-bakery-brown mb-4">Pure Goodness Baked Daily</h2>
+            <p class="text-gray-600 text-sm md:text-base max-w-xl mx-auto mb-6">
+                Serving the finest, fresh-baked eggless Khari, crispy Nan Khatai, and rich Butter Biscuits in Valsad for over 40 years.
+            </p>
+            <div class="inline-block bg-bakery-cream border-2 border-dashed border-bakery-gold text-bakery-brown font-bold px-6 py-2 rounded-xl text-lg">
+                Standard Rate: ₹200 / kg <span class="text-xs text-gray-500 font-normal">(All Items)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Grid Section -->
+    <section id="menu" class="max-w-6xl mx-auto px-4 py-8">
+        <h3 class="font-serif text-3xl font-bold text-center text-bakery-brown mb-8 relative">
+            Our Freshly Baked Menu
+            <span class="block w-16 h-1 bg-bakery-gold mx-auto mt-2 rounded"></span>
+        </h3>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Item 1: Khari -->
+            <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden flex flex-col justify-between p-4 transition-all hover:shadow-xl hover:-translate-y-1">
+                <div>
+                    <div class="rounded-xl overflow-hidden mb-4 bg-bakery-cream h-44 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1626202378370-99155059a437?w=400&auto=format&fit=crop&q=80" alt="Fresh Khari" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="font-serif text-lg font-bold text-bakery-dark">Special Khari</h4>
+                        <span class="text-bakery-accent font-bold bg-bakery-cream px-2 py-0.5 rounded text-sm">200/kg</span>
+                    </div>
+                    <p class="text-xs text-gray-500 leading-relaxed mb-4">Crispy, golden-layered puff pastry biscuits, perfectly baked to go with your daily tea.</p>
+                </div>
+                <button onclick="sendOrder('Special Khari')" class="w-full bg-bakery-brown text-white py-2 rounded-xl text-xs font-semibold hover:bg-bakery-dark transition flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                </button>
+            </div>
+
+            <!-- Item 2: Nan Khatai -->
+            <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden flex flex-col justify-between p-4 transition-all hover:shadow-xl hover:-translate-y-1">
+                <div>
+                    <div class="rounded-xl overflow-hidden mb-4 bg-bakery-cream h-44 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=400&auto=format&fit=crop&q=80" alt="Makhaniya Nan Khatai" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="font-serif text-lg font-bold text-bakery-dark">Makhaniya Nan Khatai</h4>
+                        <span class="text-bakery-accent font-bold bg-bakery-cream px-2 py-0.5 rounded text-sm">200/kg</span>
+                    </div>
+                    <p class="text-xs text-gray-500 leading-relaxed mb-4">Traditional melt-in-the-mouth Indian shortbread sweet cookies made with rich, pure ghee gloss.</p>
+                </div>
+                <button onclick="sendOrder('Makhaniya Nan Khatai')" class="w-full bg-bakery-brown text-white py-2 rounded-xl text-xs font-semibold hover:bg-bakery-dark transition flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                </button>
+            </div>
+
+            <!-- Item 3: Butter Biscuits -->
+            <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden flex flex-col justify-between p-4 transition-all hover:shadow-xl hover:-translate-y-1">
+                <div>
+                    <div class="rounded-xl overflow-hidden mb-4 bg-bakery-cream h-44 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&auto=format&fit=crop&q=80" alt="Thos Butter Biscuit" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="font-serif text-lg font-bold text-bakery-dark">Thos Butter Biscuit</h4>
+                        <span class="text-bakery-accent font-bold bg-bakery-cream px-2 py-0.5 rounded text-sm">200/kg</span>
+                    </div>
+                    <p class="text-xs text-gray-500 leading-relaxed mb-4">Rich, heavily baked crunchy butter biscuits filled with traditional aroma, a perfect snack for kids and elders.</p>
+                </div>
+                <button onclick="sendOrder('Thos Butter Biscuit')" class="w-full bg-bakery-brown text-white py-2 rounded-xl text-xs font-semibold hover:bg-bakery-dark transition flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                </button>
+            </div>
+
+            <!-- Item 4: Custom Cakes -->
+            <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden flex flex-col justify-between p-4 transition-all hover:shadow-xl hover:-translate-y-1">
+                <div>
+                    <div class="rounded-xl overflow-hidden mb-4 bg-bakery-cream h-44 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&auto=format&fit=crop&q=80" alt="Custom Birthday Cakes" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="font-serif text-lg font-bold text-bakery-dark">Custom Cakes</h4>
+                        <span class="text-bakery-accent font-bold bg-bakery-cream px-2 py-0.5 rounded text-sm">200/kg</span>
+                    </div>
+                    <p class="text-xs text-gray-500 leading-relaxed mb-4">Freshly whipped beautiful custom birthday and anniversary cream cakes available on clean advance request.</p>
+                </div>
+                <button onclick="sendOrder('Custom Cake')" class="w-full bg-bakery-brown text-white py-2 rounded-xl text-xs font-semibold hover:bg-bakery-dark transition flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Story Section -->
+    <section id="about" class="max-w-4xl mx-auto px-4 py-12">
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-md border border-gray-100 flex flex-col md:flex-row items-center gap-6">
+            <div class="w-full md:w-1/3">
+                <div class="w-24 h-24 bg-bakery-cream text-bakery-brown font-serif rounded-full flex items-center justify-center font-bold text-4xl border-2 border-bakery-gold shadow mx-auto">40+</div>
+                <p class="text-center text-xs font-bold uppercase tracking-wider text-gray-500 mt-2">Years of Legacy</p>
+            </div>
+            <div class="w-full md:w-2/3 text-center md:text-left">
+                <h3 class="font-serif text-2xl font-bold text-bakery-brown mb-2">Our Story</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Good Luck Bakery has been the landmark of taste in Mograwadi, Valsad since 1985. We strongly believe in fresh baking daily with the highest standards of hygiene and authentic family recipes that carry the authentic taste of tradition across generations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Quick Info -->
+    <section id="contact" class="max-w-6xl mx-auto px-4 py-8">
+        <div class="bg-bakery-brown rounded-3xl text-white p-6 md:p-10 shadow-xl grid grid-cols-1 md:grid-cols-3 gap-8 items-center relative overflow-hidden">
+            
+            <!-- Left Panel: Contacts -->
+            <div class="space-y-4 z-10">
+                <h4 class="font-serif text-xl font-bold text-bakery-gold border-b border-white/20 pb-2">Contact Details</h4>
+                <div class="flex items-center space-x-3 text-sm">
+                    <i class="fab fa-whatsapp text-green-400 text-xl"></i>
+                    <div>
+                        <p class="text-xs text-gray-300">Rizwan (WhatsApp Order)</p>
+                        <a href="https://wa.me/919574526430" class="font-semibold hover:underline text-white">+91 95745 26430</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-3 text-sm">
+                    <i class="fas fa-phone-alt text-bakery-gold text-base"></i>
+                    <div>
+                        <p class="text-xs text-gray-300">Father's Contact</p>
+                        <a href="tel:+919904851227" class="font-semibold text-white">+91 99048 51227</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-3 text-sm">
+                    <i class="fas fa-envelope text-orange-400 text-base"></i>
+                    <div>
+                        <p class="text-xs text-gray-300">Email Address</p>
+                        <a href="mailto:rezwansidiki@gmail.com" class="text-white hover:underline">rezwansidiki@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Panel: Location & UPI -->
+            <div class="space-y-4 z-10">
+                <h4 class="font-serif text-xl font-bold text-bakery-gold border-b border-white/20 pb-2">Location & Payment</h4>
+                <div class="flex items-start space-x-3 text-sm">
+                    <i class="fas fa-map-marker-alt text-red-400 mt-1"></i>
+                    <div>
+                        <p class="text-xs text-gray-300">Bakery Address</p>
+                        <p class="font-medium text-gray-100">House No 1015134, Ramnikbhai Ni Gali, Near Bhut Bunglow Compound, Mograwadi, Abrama Road, Valsad - 396001</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-3 text-sm bg-white/10 p-2.5 rounded-xl border border-white/10">
+                    <i class="fas fa-mobile-alt text-bakery-gold text-lg"></i>
+                    <div>
+                        <p class="text-[10px] text-gray-300 uppercase tracking-wider font-bold">UPI Payment ID</p>
+                        <p class="font-mono text-xs select-all text-bakery-gold">rezwansidiki-2@oksbi</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel: Google Maps Frame -->
+            <div class="rounded-xl overflow-hidden h-48 border border-white/10 shadow-inner relative z-10">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.4567890123456!2d72.9345!3d20.6101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDM2JzM2LjQiTiA3MsKwNTYnMDQuMiJF!5e0!3m2!1sen!2sin!4v1234567890" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="absolute inset-0">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="bg-bakery-dark text-gray-400 py-6 text-center text-xs mt-12 border-t border-bakery-gold/10">
+        <div class="max-w-6xl mx-auto px-4 space-y-2">
+            <p class="text-gray-300 font-medium">Proprietor: Mohammad Rizwan Abdullah Siddiqui | GST Available on Request</p>
+            <p>&copy; 2026 Good Luck Bakery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Logic Script -->
+    <script>
+        function sendOrder(itemName) {
+            const baseMsg = `Hi Rizwan, I would like to inquire about/order "${itemName}" from Good Luck Bakery website. Please guide me with availability.`;
+            const waUrl = `https://wa.me/919574526430?text=${encodeURIComponent(baseMsg)}`;
+            window.open(waUrl, '_blank');
+        }
+    </script>
+</body>
+      </html>
+      
